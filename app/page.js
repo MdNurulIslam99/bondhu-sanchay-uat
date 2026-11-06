@@ -37,8 +37,8 @@ export default function Home() {
             </h1>
             <p>
               Just <strong>৳500 a month</strong>. Your regular savings and our
-              shared effort create a future full of possibility. Bondhu
-              Sanchay is a promise to move forward together.
+              shared effort create a future full of possibility. Bondhu Sanchay
+              is a promise to move forward together.
             </p>
             <div className="hero-actions">
               <Link className="button" href="/contact">
@@ -57,7 +57,8 @@ export default function Home() {
               <div>
                 <strong>A family moving ahead together</strong>
                 <small>
-                  <ShieldCheck size={13} /> Transparency, trust and mutual support
+                  <ShieldCheck size={13} /> Transparency, trust and mutual
+                  support
                 </small>
               </div>
             </div>
@@ -95,7 +96,9 @@ export default function Home() {
               <TrendingUp size={25} />
               <div>
                 <strong>Growing together</strong>
-                <small>Today&apos;s savings, tomorrow&apos;s possibilities</small>
+                <small>
+                  Today&apos;s savings, tomorrow&apos;s possibilities
+                </small>
               </div>
             </div>
           </div>
@@ -116,16 +119,26 @@ export default function Home() {
       <section className="container stats">
         {[
           [Users, "48", "Active members", "A family built on trust"],
-          [Wallet, "৳432,000", "Total savings", "Big capital from small savings"],
+          [
+            Wallet,
+            "৳432,000",
+            "Total savings",
+            "Big capital from small savings",
+          ],
           [
             ChartNoAxesCombined,
             "৳300,000",
             "Total invested",
             "Together on the path to possibility",
           ],
-          [TrendingUp, "৳36,000", "Profit earned", "The fruit of shared effort"],
+          [
+            TrendingUp,
+            "৳36,000",
+            "Profit earned",
+            "The fruit of shared effort",
+          ],
         ].map(([Icon, value, label, sub]) => (
-          <div className="stat" key={label}>
+          <div className="stat p-5" key={label}>
             <span className="stat-icon">
               <Icon size={22} />
             </span>
@@ -217,8 +230,7 @@ export default function Home() {
             <span className="eyebrow">Our promise</span>
             <h2>
               More than savings,
-              <br />
-              a bond of trust.
+              <br />a bond of trust.
             </h2>
             <p className="muted">
               Behind every taka is a friend&apos;s dream. Staying responsible to
