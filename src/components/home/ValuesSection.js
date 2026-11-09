@@ -24,7 +24,7 @@ export default function ValuesSection() {
             <span className={`${tagClass} -right-3 bottom-9 sm:-right-6`}>
               <Users size={18} /> Cooperation
             </span>
-            <span className={`${tagClass} -left-4 top-32 sm:-left-7`}>
+            <span className={`${tagClass} -left-4 top-32 sm:-left-12`}>
               <TrendingUp size={18} /> Progress
             </span>
           </div>
