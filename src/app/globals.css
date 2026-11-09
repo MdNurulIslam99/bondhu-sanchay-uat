@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+/* Design tokens only. All styling is done with Tailwind utilities in components. */
+@theme {
+  --color-brand: #0f5a45;
+  --color-brand-dark: #0a3a2d;
+  --color-ink: #10302a;
+  --color-cream: #faf6ec;
+  --color-paper: #fffdf7;
+  --color-sand: #f4f1e6;
+  --color-gold: #e0a63a;
+  --color-clay: #c8643c;
+  --color-line: #e8e2d3;
+  --color-muted: #738079;
+  --color-mint: #e3f3ea;
+  /* Noto Sans Bengali supplies ৳ and Bangla text, which the Latin fonts lack. */
+  --font-sans: "Plus Jakarta Sans", "Noto Sans Bengali", system-ui, Arial, sans-serif;
+  --font-serif: "Fraunces", "Noto Sans Bengali", Georgia, serif;
+  --animate-fade-in: fade-in 300ms ease-out 200ms backwards;
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+  }
+}
+
+@layer base {
+  body {
+    background: var(--color-cream);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-serif);
+    letter-spacing: -0.015em;
+    font-weight: 600;
+  }
+  html,
+  body {
+    overflow-x: clip; /* never let one wide element push the whole page sideways on mobile */
+  }
+  button {
+    cursor: pointer;
+  }
+  button:disabled {
+    cursor: not-allowed;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  svg {
+    flex-shrink: 0;
+  }
+  :focus-visible {
+    outline: 3px solid #ca9b42;
+    outline-offset: 3px;
+  }
+  input[type="checkbox"] {
+    accent-color: var(--color-brand);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}
